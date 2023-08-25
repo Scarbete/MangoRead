@@ -1,0 +1,35 @@
+@import '../../../assets/css/vars'
+
+.MangoCard
+    position: relative
+    height: 220px
+    width: fit-content
+    border-radius: 15px
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5)
+    background: rgba(0, 0, 0, 0.9)
+    overflow: hidden
+    img
+        width: 190px
+        height: 220px
+        background: rgba(0, 0, 0, 0.2)
+        opacity: 0.7
+        transition: 300ms
+        z-index: 5
+    &__text
+        position: absolute
+        left: 10px
+        bottom: 10px
+        p
+            color: $white
+            font-size: 14px
+            margin-bottom: 11px
+        h5
+            color: $white
+            font-size: 16px
+            font-weight: 500
+            height: 40px
+            overflow: hidden
+.MangoCard:hover
+    cursor: pointer
+.MangoCard:hover img
+    transform: scale(1.05)

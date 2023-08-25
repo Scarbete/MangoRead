@@ -1,0 +1,60 @@
+@import '../../../../assets/css/vars'
+
+.SignUp
+    min-width: 500px
+    max-width: 500px
+    z-index: 100
+    &__Avatar
+        width: 181px
+        height: 181px
+        margin: 0 auto
+        border-radius: 50%
+        overflow: hidden
+        img
+            width: 181px
+            height: 181px
+        &__AddImg
+            color: $black
+            font-size: 16px
+            text-transform: uppercase
+            text-align: center
+            margin: 21px auto 20px
+        &__AddImg:hover
+            cursor: pointer
+            text-decoration-line: underline
+    &__Form
+        width: 100%
+        display: flex
+        flex-direction: column
+        gap: 30px
+        input
+            width: 100%
+            height: 52px
+            padding: 0 10px
+            border-radius: 8px
+            border: 1px solid $black
+            color: $grayText
+            font-size: 24px
+        button
+            border-radius: 8px
+            background: $lightPurple
+            width: 100%
+            padding: 15px
+            display: flex
+            justify-content: center
+            align-items: center
+            color: $white
+            font-size: 16px
+            text-transform: uppercase
+            transition: 250ms
+        button:hover
+            background: $lightestPurple
+            cursor: pointer
+        button:active
+            background: $darkPurple
+    &__ImageInput
+        width: 0
+        height: 0
+        background: none
+        overflow: hidden
+        visibility: hidden

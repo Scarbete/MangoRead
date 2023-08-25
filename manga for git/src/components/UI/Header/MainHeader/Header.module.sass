@@ -1,0 +1,54 @@
+@import '../../../../assets/css/vars'
+
+.Header
+    width: 100%
+    background: $darkWhite
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.15)
+    z-index: 5
+    &__inner
+        padding: 14px 0 13px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__Logo
+            display: flex
+            align-items: center
+            gap: 5px
+            &__texts
+                h3
+                    color: $black
+                    font-size: 20px
+                    font-weight: 500
+                    margin-bottom: 4px
+                p
+                    color: $grayText
+        &__Logo:hover
+            cursor: pointer
+        &__Buttons
+            display: flex
+            align-items: center
+            justify-content: space-between
+            gap: 15px
+            button
+                background: none
+                font-size: 16px
+                text-transform: uppercase
+                padding: 15px 40px
+                border-radius: 8px
+                transition: 200ms
+            button:nth-child(1)
+                border: 2px solid $lightPurple
+                color: $black
+            button:nth-child(2)
+                background: $lightPurple
+                border: 2px solid $lightPurple
+                color: $white
+            button:hover
+                background: $lightPurple
+                box-shadow: 0 0 20px 0 #AD02E0
+                color: $white
+                cursor: pointer
+            button:active
+                border: 2px solid $darkPurple
+                background: $darkPurple
+                box-shadow: none

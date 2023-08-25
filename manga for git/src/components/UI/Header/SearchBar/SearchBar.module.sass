@@ -1,0 +1,42 @@
+@import '../../../../assets/css/vars'
+
+
+.SearchBox
+    position: relative
+    width: 342px
+    height: fit-content
+    &__Search
+        position: absolute
+        width: 342px
+        display: flex
+        align-items: center
+        img
+            position: absolute
+            top: -12px
+            left: 16px
+            z-index: 3
+        input
+            position: absolute
+            border-radius: 8px
+            border: 2px solid $grayText
+            background: none
+            width: 100%
+            height: 56px
+            font-size: 20px
+            padding-right: 10px
+            transition: 200ms
+            z-index: 4
+        input:focus-within
+            border: 2px solid $lightPurple
+    &__SearchArr
+        width: 100%
+        position: absolute
+        top: 30px
+        background: $white
+        padding: 10px
+        border-radius: 16px
+        p
+            margin-bottom: 10px
+        p:hover
+            text-decoration-line: underline
+            cursor: pointer

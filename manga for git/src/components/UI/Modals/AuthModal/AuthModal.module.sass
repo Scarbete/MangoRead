@@ -1,0 +1,75 @@
+@import '../../../../assets/css/vars'
+
+.AuthModalWrapper
+    position: fixed
+    overflow: hidden
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    background: rgba(0, 0, 0, 0.5)
+    backdrop-filter: blur(5px)
+    z-index: 30
+.AuthModal
+    position: fixed
+    top: 50%
+    right: 0
+    bottom: 0
+    left: 50%
+    width: 603px
+    height: fit-content
+    overflow: hidden
+    border-radius: 30px
+    background: $white
+    padding: 30px 51px 50px
+    transform: translate(-50%, -50%)
+    transition: 250ms
+    z-index: 31
+    &__NavBox
+        position: absolute
+        top: 31px
+        right: 51px
+        left: 51px
+        height: 75px
+        width: 500px
+        border-bottom: 1px solid $grayText
+        &__Links
+            position: absolute
+            left: 0
+            bottom: 5px
+            display: flex
+            align-items: center
+            gap: 30px
+            p
+                color: $black
+                font-size: 24px
+            p:hover
+                cursor: pointer
+        img
+            position: absolute
+            top: 0
+            right: 0
+            transition: 200ms
+        img:hover
+            cursor: pointer
+            transform: scale(1.2)
+        &__Selected
+            position: absolute
+            bottom: -3px
+            height: 5px
+            border-radius: 5px
+            background: $lightPurple
+            transition: 300ms
+    &__Divider
+        width: 100%
+        height: 2px
+        margin: 40px 0 70px
+    &__ModalsBox
+        overflow: hidden
+        transition: 350ms
+        &__inner
+            display: flex
+            gap: 100px
+            transition: 400ms

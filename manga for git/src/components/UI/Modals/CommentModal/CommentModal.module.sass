@@ -1,0 +1,78 @@
+@import '../../../../assets/css/vars'
+
+.CommentModalWrapper
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    background: rgba(0, 0, 0, 0.5)
+    z-index: 1200
+.CommentModal
+    position: fixed
+    top: 50%
+    right: 0
+    bottom: 0
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 780px
+    height: 302px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 37px 60px 60px
+    border-radius: 32px
+    background: $white
+    z-index: 1210
+    &__UserData
+        display: flex
+        gap: 52px
+        &__Avatar
+            min-width: 100px
+            max-width: 100px
+            height: 100px
+            border-radius: 50%
+            overflow: hidden
+            img
+                min-width: 100px
+                max-width: 100px
+                height: 100px
+                border-radius: 50%
+        span
+            color: $black
+            font-size: 35px
+            word-break: break-all
+    &__Form
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 52px
+        gap: 10px
+        padding: 0 0 0 10px
+        border-radius: 8px
+        border: 1px solid #000
+        overflow: hidden
+        input
+            width: 80%
+            color: $grayText
+            font-size: 18px
+        button
+            height: 100%
+            display: flex
+            padding: 16px 32px
+            justify-content: center
+            align-items: center
+            gap: 10px
+            background: $lightPurple
+            color: $white
+            font-size: 16px
+            text-transform: uppercase
+            transition: 250ms
+        button:hover
+            background: $lightestPurple
+            cursor: pointer
+        button:active
+            background: $darkPurple

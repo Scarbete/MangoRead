@@ -1,0 +1,61 @@
+@import '../../../../assets/css/vars'
+
+.Types
+    min-width: 400px
+    max-width: 400px
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    z-index: 10
+    &__Handler
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 10px
+        margin: 0 5px
+        border-radius: 10px
+        h3
+            color: $black
+            font-size: 24px
+        &__Button
+            display: flex
+            justify-content: space-between
+            align-items: center
+            gap: 17px
+            color: $grayText
+            background: none
+            font-size: 24px
+    &__Handler:hover
+        background: rgba(135, 135, 135, 0.20)
+        cursor: pointer
+    &__List
+        margin: 33px auto
+        padding: 0 15px
+        display: flex
+        flex-direction: column
+        gap: 10px
+        h4
+            color: $black
+            font-size: 24px
+    &__YearSort
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 33px auto
+        padding: 0 15px
+        input
+            display: flex
+            align-items: center
+            width: 168px
+            height: 55px
+            padding: 0 15px
+            background: none
+            border-radius: 8px
+            border: 2px solid $lightGreen
+            font-size: 20px
+        &__Divider
+            height: 1px
+            width: 15px
+            background: $black

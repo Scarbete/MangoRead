@@ -1,0 +1,18 @@
+@import '../../../assets/css/vars'
+
+.Loading
+    height: 650px
+    width: 100%
+    background: $darkWhite
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+        width: 200px
+        height: 200px
+        animation: 2000ms loading ease-in-out infinite
+    @keyframes loading
+        0%
+            transform: rotate(0deg)
+        100%
+            transform: rotate(360deg)

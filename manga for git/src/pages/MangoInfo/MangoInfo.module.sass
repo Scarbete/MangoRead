@@ -1,0 +1,122 @@
+@import '../../assets/css/vars'
+
+.MangoInfo
+    padding: 33px 0 47px
+    background: $darkWhite
+    &__inner
+        &__backArrow
+            display: flex
+            align-items: center
+            gap: 14px
+            &__p
+                color: $grayText
+                font-size: 24px
+        &__backArrow:hover
+            cursor: pointer
+        &__Mango
+            margin-top: 33px
+            padding-bottom: 33px
+            display: flex
+            justify-content: space-between
+            gap: 41px
+            border-bottom: 2px solid $divider2
+            &__Avatar
+                min-width: 328px
+                max-width: 328px
+                min-height: 328px
+                max-height: 328px
+                border-radius: 16px
+                overflow: hidden
+                img
+                    width: 328px
+                    height: 328px
+            &__Text
+                h2
+                    color: $black
+                    font-size: 40px
+                    font-weight: 500
+                    margin-bottom: 40px
+                h3
+                    color: $black
+                    font-size: 30px
+                    margin-bottom: 21px
+                span
+                    color: $black
+                    margin-bottom: 21px
+                    font-size: 24px
+                p
+                    margin-bottom: 21px
+                    color: $grayText
+                    font-size: 24px
+                &__Genre
+                    display: flex
+                    gap: 10px
+
+        &__ManfoInfo
+            padding-bottom: 33px
+            border-bottom: 2px solid $divider2
+            h3
+                color: $black
+                font-size: 35px
+                font-weight: 500
+                margin: 32px 0 10px
+            p
+                color: $mangoInfoText
+                font-size: 24px
+        &__Comments
+            padding: 33px 0 0
+            &__Nav
+                display: flex
+                align-items: center
+                justify-content: space-between
+                margin-bottom: 33px
+                h3
+                    color: $black
+                    font-size: 35px
+                    font-weight: 500
+                p
+                    color: $lightPurple
+                    font-size: 18px
+                    font-weight: 500
+                    text-transform: uppercase
+                p:hover
+                    cursor: pointer
+            &__Info
+                display: flex
+                margin-bottom: 33px
+                &__Avatar
+                    min-width: 100px
+                    max-width: 100px
+                    min-height: 100px
+                    max-height: 100px
+                    border-radius: 50%
+                    overflow: hidden
+                    margin-right: 26px
+                    img
+                        width: 100px
+                        height: 100px
+                        overflow: hidden
+                &__TextBox
+                    padding-left: 26px
+                    border-left: 2px solid $grayText
+                    h3
+                        color: $black
+                        font-size: 35px
+                        margin-bottom: 13px
+                    p
+                        color: $grayText
+                        font-size: 24px
+.loading
+    height: 500px
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 50px
+    text-transform: uppercase
+.pagination
+    width: 100%
+    display: flex
+    margin-top: 16px
+    justify-content: center
+    align-items: center

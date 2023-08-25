@@ -1,0 +1,38 @@
+@import '../../../../assets/css/vars'
+
+.Profile
+  display: flex
+  align-items: center
+  gap: 25px
+  h3
+    color: $black
+    font-size: 24px
+  &__Logo
+    width: 80px
+    height: 80px
+    border-radius: 50%
+    overflow: hidden
+    img
+      width: 80px
+      height: 80px
+  &__Logout
+    padding: 10px
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+      transition: 250ms
+  &__Logout:hover
+    background: rgba(128, 128, 128, 0.15)
+    cursor: pointer
+  &__LogoutActive
+    position: absolute
+    top: 85px
+    right: 70px
+    background: $white
+    padding: 10px
+    border-radius: 10px
+    font-size: 22px
+  &__LogoutActive:hover
+    cursor: pointer

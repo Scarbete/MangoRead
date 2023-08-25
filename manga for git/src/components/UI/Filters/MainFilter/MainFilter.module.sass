@@ -1,0 +1,39 @@
+@import '../../../../assets/css/vars'
+
+.Filter
+    min-width: 400px
+    max-width: 400px
+    padding: 20px 0 10px 0
+    border-radius: 20px
+    overflow: hidden
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15)
+    &__Slider
+        width: 100%
+        display: flex
+        gap: 100px
+        transition: 130ms
+    &__Buttons
+        display: flex
+        justify-content: space-between
+        margin: 10px 15px 0
+        button
+            width: 175px
+            padding: 16px 0
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 8px
+            color: $white
+            font-size: 16px
+            text-transform: uppercase
+            transition: 250ms
+        &__Reset
+            background: $lightestPurple
+        &__Use
+            background: $lightPurple
+        button:hover
+            box-shadow: 0 0 20px 0 #AD02E0
+            cursor: pointer
+        button:active
+            background: $darkPurple
+            box-shadow: none
